@@ -166,7 +166,7 @@ import {
       name: "Gibril Farah",
       designation: "Board Member",
       company: "Somali Graves Association",
-      image: t1, // Replace with actual image
+      image: t1, 
     },
     {
       testimonial:
@@ -174,7 +174,7 @@ import {
       name: "Abdullahi Abdirahman",
       designation: "Professional Physiotherapist",
       company: "",
-      image: t2, // Replace with actual image
+      image: t2, 
     },
     {
       testimonial:
@@ -182,7 +182,7 @@ import {
       name: "Fardowsa Abdirahman",
       designation: "Board Member",
       company: "Somali Graves Association",
-      image: t3, // Replace with actual image
+      image: t3, 
     },
   ];
   
