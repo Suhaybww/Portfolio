@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
@@ -17,8 +18,11 @@ const App = () => {
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />
+        </div>
+        <div className='absolute inset-0 z-[-1]'>
           <StarsCanvas />
         </div>
+        <Toaster position="bottom-center" />
       </div>
     </BrowserRouter>
   );
