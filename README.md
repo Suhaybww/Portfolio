@@ -4,7 +4,7 @@ This repository contains the code for my professional portfolio website, showcas
 
 ## Live Website
 
-You can view the live website at: [https://suhaybww.github.io/Portfolio/](https://suhaybww.github.io/Portfolio/)
+You can view the live website at: [https://suhaybs-professional-portfolio.vercel.app](https://suhaybs-professional-portfolio.vercel.app)
 
 ## Technologies Used
 
