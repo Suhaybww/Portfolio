@@ -47,15 +47,22 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+      variants={fadeIn("", "", 0.1, 1)}
+      className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+    >
+      I'm an experienced software developer proficient in TypeScript, JavaScript, 
+      React, Next.js, Express, Prisma, and tRPC. I'm well-versed in Docker, AWS tools, and 
+      both SQL and NoSQL databases. My expertise extends to implementing secure 
+      payment systems with Stripe and robust authentication processes using KINDE 
+      and other auth providers. I specialize in building full-stack applications 
+      with a focus on performance and scalability. I work closely with clients to understand their 
+      unique challenges and create tailored solutions that not only meet but exceed 
+      expectations. My approach combines technical expertise with a keen understanding 
+      of business needs, resulting in robust, scalable, and secure applications that 
+      solve real-world problems. I'm committed to delivering high-quality, efficient 
+      code that drives value for my clients. Let's collaborate and turn your vision 
+      into a secure, feature-rich reality!
+    </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

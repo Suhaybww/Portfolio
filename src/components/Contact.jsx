@@ -7,6 +7,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import toast from 'react-hot-toast';
 
 const Contact = () => {
   const formRef = useRef();
@@ -31,24 +32,40 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Professional Portfolio",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "suhaybw1@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success('Thank you. I will get back to you as soon as possible.', {
+            duration: 5000,
+            style: {
+              background: 'rgba(29, 24, 54, 0.9)',
+              color: '#ffffff',
+              padding: '16px',
+              borderRadius: '8px',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+              fontSize: '14px',
+              maxWidth: '350px',
+              textAlign: 'center',
+            },
+            iconTheme: {
+              primary: '#4ade80',
+              secondary: '#1d1836',
+            },
+          });
 
           setForm({
             name: "",
@@ -59,12 +76,27 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error('Something went wrong. Please try again.', {
+            duration: 5000,
+            style: {
+              background: 'rgba(29, 24, 54, 0.9)',
+              color: '#ffffff',
+              padding: '16px',
+              borderRadius: '8px',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+              fontSize: '14px',
+              maxWidth: '350px',
+              textAlign: 'center',
+            },
+            iconTheme: {
+              primary: '#ef4444',
+              secondary: '#1d1836',
+            },
+          });
         }
       );
   };
-
+  
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}

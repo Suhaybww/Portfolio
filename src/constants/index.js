@@ -15,14 +15,17 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    freelance,
+    huddled,
+    RMIT,
+    sag,
+    pt,
+    soon,
+    t1,
+    t2,
+    t3,
+  
   } from "../assets";
   
   export const navLinks = [
@@ -42,20 +45,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "DevOps & Cloud Solutions",
+      icon: creator,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Frontend Developer",
+      icon: mobile,
     },
   ];
   
@@ -116,55 +119,42 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Bachelor of Computer Science",
+      company_name: "RMIT University",
+      icon: RMIT,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "2020 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing comprehensive skills as a software engineer through rigorous coursework and hands-on projects.",
+        "Mastering a wide range of tools and technologies including TypeScript, JavaScript, React, Express, and more.",
+        "Engaging in self-directed learning to stay ahead of industry trends and emerging technologies.",
+        "Participating in peer mentoring programs to enhance collaborative skills and deepen understanding of complex concepts.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Full Stack Engineer Intern",
+      company_name: "Huddled",
+      icon: huddled,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2023 - Feb 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Spearheading the development of user stories and troubleshooting issues using GitHub to maintain high code standards for startup projects.",
+        "Participating in weekly scrum meetings to ensure agile practices and project alignment with stakeholder objectives.",
+        "Actively engaging in the production and design of application features, contributing to both strategic direction and detailed implementation.",
+        "Working with the web-app and mobile team, utilizing Svelte and Firebase to create responsive and performant applications.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Freelance Software Engineer",
+      company_name: "Self-employed",
+      icon: freelance,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Mar 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing full-stack web applications for diverse clients, handling everything from initial consultations to final delivery.",
+        "Conducting in-depth client meetings to understand product requirements and translating ideas into technical specifications.",
+        "Designing and implementing responsive, user-friendly interfaces while ensuring robust backend functionality.",
+        "Performing thorough code reviews and rigorous testing to deliver high-quality, scalable solutions that meet client expectations.",
       ],
     },
   ];
@@ -172,92 +162,75 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "The SAG website has revolutionized how we manage grave subscriptions. It's user-friendly, secure, and has significantly improved our administrative efficiency.",
+      name: "Gibril Farah",
+      designation: "Board Member",
+      company: "Somali Graves Association",
+      image: t1, 
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "This website perfectly captures my professional image and has been instrumental in attracting new clients. It's both functional and aesthetically pleasing.",
+      name: "Abdullahi Abdirahman",
+      designation: "Professional Physiotherapist",
+      company: "",
+      image: t2, 
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "The online payment system has made it so much easier for our community members to manage their subscriptions. It's a game-changer for our organization's financial management.",
+      name: "Fardowsa Abdirahman",
+      designation: "Board Member",
+      company: "Somali Graves Association",
+      image: t3, 
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Somali Graves Association",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A specialized website managing yearly subscription fees for graves. It features user authentication with Kinde Auth, allowing users to create accounts and sign in securely. The platform integrates Stripe for processing subscription payments, ensuring a safe and efficient financial transaction system.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "prisma", color: "green-text-gradient" },
+        { name: "trpc", color: "pink-text-gradient" },
+        { name: "next.js", color: "orange-text-gradient" },
+        { name: "tailwind", color: "blue-text-gradient" },
+        { name: "neon", color: "green-text-gradient" },
+        { name: "stripe", color: "green-text-gradient" },
+        { name: "kinde", color: "pink-text-gradient" },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: sag,
+      source_code_link: "https://github.com/farah-gibril/SAG_APP/tree/main",
     },
     {
-      name: "Job IT",
+      name: "Physiotherapy Personal Website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A professional website for a physiotherapist, showcasing their experience and expertise. The site highlights the therapist's work, provides information about services, and includes a contact form for potential clients.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "next.js", color: "green-text-gradient" },
+        { name: "tailwind", color: "pink-text-gradient" },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: pt,
+      source_code_link: "https://github.com/Suhaybww/PhysiotherapyPortfolio",
     },
     {
-      name: "Trip Guide",
+      name: "Clothing E-commerce Store",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive e-commerce platform for a client selling dresses. Users can browse products, create accounts using Kinde Auth, make purchases via Stripe, and receive invoices. The admin interface allows for product and user management, providing a complete solution for online retail with secure authentication and payment processing.",
       tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "next.js", color: "green-text-gradient" },
+        { name: "tailwind", color: "pink-text-gradient" },
+        { name: "prisma", color: "orange-text-gradient" },
+        { name: "trpc", color: "blue-text-gradient" },
+        { name: "neon", color: "green-text-gradient" },
+        { name: "stripe", color: "green-text-gradient" },
+        { name: "kinde", color: "pink-text-gradient" },
       ],
-      image: tripguide,
+      image: soon,
       source_code_link: "https://github.com/",
     },
   ];
