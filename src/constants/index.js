@@ -173,7 +173,7 @@ import {
         "This website perfectly captures my professional image and has been instrumental in attracting new clients. It's both functional and aesthetically pleasing.",
       name: "Abdullahi Abdirahman",
       designation: "Professional Physiotherapist",
-      company: "",
+      company: "Head2Toe",
       image: t2, 
     },
     {
